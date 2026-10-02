@@ -1,5 +1,11 @@
 # [The Academic CV That Gets You Hired](https://github.com/HugoBlox/hugo-theme-academic-cv)
 
+## This repository
+
+Website: <https://MAGNC.github.io/academic-cv/>. Run `pnpm dev` to preview your
+edits at <http://localhost:1313/>. See [DEVELOPMENT.md](DEVELOPMENT.md) for
+setup, editable files, and publishing instructions.
+
 [![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/academic-cv?utm_source=github&utm_medium=readme&utm_content=preview)
 
 <!-- TODO: Replace with a short demo video showing Hugo Chat generating an academic profile page -->

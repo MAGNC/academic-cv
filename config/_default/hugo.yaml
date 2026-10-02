@@ -6,7 +6,7 @@
 # Website name (set in params.yaml under hugoblox.branding.name)
 title: ''
 # Website URL
-baseURL: 'https://example.com/'
+baseURL: 'http://www.mathming.ltd/academic-cv/'
 
 ############################
 ## LANGUAGE
@@ -61,5 +61,8 @@ markup:
     lineNos: false
 security:
   _merge: deep
+  exec:
+    # HugoBlox compiles its styles with the local Tailwind CLI.
+    allow: ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
 sitemap:
   _merge: deep
