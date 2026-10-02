@@ -7,7 +7,7 @@ redirects the address above to <http://www.mathming.ltd/academic-cv/>.
 
 ## Preview locally
 
-This site uses HugoBlox, Hugo Extended, Go, Node.js, and pnpm. Hugo 0.162.0
+This site uses HugoBlox, Hugo Extended, Go, Node.js, and pnpm. Hugo 0.167.0
 is pinned for GitHub Actions in `hugoblox.yaml`. Use Node.js 22 or newer locally.
 On this Mac, these tools are already installed.
 
@@ -34,7 +34,7 @@ In VS Code, you can also select **Terminal → Run Task → Preview academic CV*
 | File or folder | Content |
 | --- | --- |
 | `content/_index.md` | Homepage sections and research introduction |
-| `data/authors/me.yaml` | Name, biography, affiliation, links, education, and experience |
+| `data/authors/` | Author YAML files with your name, biography, links, education, and experience |
 | `config/_default/params.yaml` | Site identity, theme, header, footer, and search |
 | `config/_default/menus.yaml` | Navigation links |
 | `content/publications/` | Publication entries |
@@ -69,7 +69,7 @@ want to publish, and select **Sync Changes**. Alternatively:
 
 ```sh
 git status
-git add content/_index.md data/authors/me.yaml
+git add content/_index.md data/authors/
 git commit -m "Update academic profile"
 git push origin main
 ```
@@ -94,3 +94,6 @@ The deployment supplies GitHub's Pages URL to Hugo, including `/academic-cv/`.
 The project explicitly permits the Tailwind executable in Hugo's
 [`security.exec.allow` configuration](https://gohugo.io/configuration/security/)
 so HugoBlox can build its stylesheet.
+
+If you rename an author file, set its `slug` to the filename without `.yaml`
+and update the homepage section's `content.username` to the same value.
