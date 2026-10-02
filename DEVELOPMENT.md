@@ -24,8 +24,8 @@ pnpm dev
 ```
 
 Open <http://localhost:1313/>. Leave the terminal running while you edit.
-Saving a file rebuilds the site and reloads the browser. Drafts appear in the
-local preview. Press Ctrl+C to stop the server.
+Saving a file rebuilds the site and reloads the browser. Drafts and future-dated
+pages appear in the local preview. Press Ctrl+C to stop the server.
 
 In VS Code, you can also select **Terminal → Run Task → Preview academic CV**.
 
@@ -59,7 +59,7 @@ pnpm build
 ```
 
 This generates the production site and its Pagefind search index in `public/`.
-Drafts are excluded. Generated output and installed dependencies are ignored
+Drafts and future-dated pages are excluded. Generated output and installed dependencies are ignored
 by Git; publish the source files.
 
 ## Publish changes
